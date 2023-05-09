@@ -1,0 +1,9 @@
+header {
+  width:100vw;
+  height:10vh;
+  background-color: bisque;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size:32px;
+}

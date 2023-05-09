@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="content">
+    <div class="menu-item">
+      <ul>
+        <li class="halit">Menu Item</li>
+        <li>Menu Item</li>
+        <li>Menu Item</li>
+        <li>Menu Item</li>
+        <li>Menu Item</li>
+        <li>Menu Item</li>
+        <li>Menu Item</li>
+        <li>Menu Item</li>
+        <li>Menu Item</li>
+        <li>Menu Item</li>
+        <li>Menu Item</li>
+      </ul>
+    </div>
+    <div class="form-area">
+      <h2>Title</h2>
+      <form #form="ngForm">
+        <input type="text" name="text1" placeholder="Text Form Field" [(ngModel)]="formData.text1" required="true">
+        <br>
+        <input type="text" name="text2" placeholder="Text Form Field" [(ngModel)]="formData.text2" required="true">
+        <br>
+        <input type="text" name="text3" placeholder="Text Form Field" [(ngModel)]="formData.text3" required="true">
+        <br>
+        <input type="text" name="text4" placeholder="Text Form Field" [(ngModel)]="formData.text4" required="true">
+        <br>
+        <div class="buttons">
+          <button [disabled]="form.invalid" (click)="resetForm()">Reset Button</button>
+          <button type="submit" [disabled]="form.invalid">Submit Button</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
